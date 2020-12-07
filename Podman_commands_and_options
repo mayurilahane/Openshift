@@ -1,0 +1,16 @@
+1. podman run <image name>
+    we use -d to run container in background (detached mode).
+    but if we didn't used it then when we press ctrl + C it will kill process and container also.
+    So, to not kill container we have to use -d.
+
+2. podman ps
+    displayes id and names of all activity running containers.
+    we can give container a name but if we havent then it can take default name.
+    to give a container name use --name and give name of container.
+
+    eg: sudo podman run --name <container_name> <image_name>
+
+3. the name of podman must be unique always.
+
+4. podman ps -a
+    will display all activity of running and stopped containers.
